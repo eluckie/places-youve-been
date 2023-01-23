@@ -36,3 +36,21 @@ Place.prototype.fullDescription = function() {
   return this.placeName + ", " + this.countryName;
 };
 
+// User Interface Logic ---------
+let allPlaces = new AllPlaces();
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const placeName = document.querySelector("input#new-place-name").value;
+  const countryName = document.querySelector("input#new-country-name").value;
+  const seasonVisited = document.querySelector("input#season-visited").value;
+  const notes = document.querySelector("input#notes").value;
+  let newPlace = new Place(placeName, countryName, seasonVisited, notes);
+  allPlaces.addPlace(newPlace);
+  console.log(allPlaces.places);
+}
+
+window.addEventListener("load", function (){
+  document.querySelector("form#new-place").addEventListener("submit", handleFormSubmission);
+
+});
