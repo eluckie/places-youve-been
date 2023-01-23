@@ -87,6 +87,19 @@ allPlaces.assignId(testPlace1);
 Expected Output:
 allPlaces.places {1}
 
+<!-- New function -->
+Describe AllPlaces.prototype.deletePlaceById()
+
+Test 1: "It should delete a place by a unique id previously added to the AllPlaces object"
+Code: 
+let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let testPlace2 = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
+let allPlaces = new AllPlaces();
+allPlaces.addPlace(testplace1);
+allPlaces.addPlace(testplace2);
+allPlaces.deletePlaceById(1);
+Expected Output:
+allPlaces.places {2: Place}
 
 <!-- New function -->
 Describe AllPlaces.prototype.findPlaceById()
