@@ -89,17 +89,17 @@ allPlaces.places {1}
 
 
 <!-- New function -->
-<!-- Describe AllPlaces.prototype.assignId()
+Describe AllPlaces.prototype.findPlaceById()
 
-Test 1: "It should assign a unique id to each place added to the AllPlaces object"
+Test 1: "It should find a place by a unique id previously added to the AllPlaces object"
 Code: 
 let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
 let testPlace2 = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
 let allPlaces = new AllPlaces();
-allPlaces.assignId(testPlace1);
-allPlaces.assignId(testPlace2);
+let id = 1;
+allPlaces.assignId(id);
 Expected Output:
-allPlaces.places {1: Place, 2: Place} -->
+allPlaces.places {1: Place}
 
 ## Known Bugs
 
