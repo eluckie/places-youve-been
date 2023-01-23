@@ -67,6 +67,14 @@ allPlaces.addPlace(testPlace2);
 Expected Output:
 allPlaces.places {Montana: Place, Vancouver: Place}
 
+Test 2: "It should add a unique ID to reference the object instance that assignId method is called on"
+Code: 
+let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let allPlaces = new AllPlaces();
+allPlaces.addPlace(testPlace);
+Expected Output:
+allPlaces.places {1: Place}
+
 <!-- New function -->
 Describe AllPlaces.prototype.assignId()
 
