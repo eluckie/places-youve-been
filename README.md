@@ -26,6 +26,7 @@ Describe Place(placeName, countryName, seasonVisited, notes);
 
 Test 1: "It should create an object for each place visited that includes the name of the place, country, the season visited, and any notes."
 Code: let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+testPlace;
 Expected Output: 
 Place {
   placeName: "Montana";
