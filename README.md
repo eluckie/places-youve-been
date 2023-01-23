@@ -54,6 +54,19 @@ let allPlaces = new AllPlaces();
 allPlaces;
 Expected Output: allPlaces = "{}";
 
+<!-- New function -->
+Describe AllPlaces.prototype.addPlace()
+
+Test 1: "It should add specified place object to AllPlaces constructor object"
+Code: 
+let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let testPlace = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
+let allPlaces = new AllPlaces();
+testPlace.addPlace;
+Expected Output:
+allPlaces.places {Montana: Place, Vancouver: Place}
+
+<!-- Test 1: "It should assign a unique id to each place added to the AllPlaces object" -->
 ## Known Bugs
 
 * _No known issues at this time_
