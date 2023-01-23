@@ -48,7 +48,10 @@ Expected Output:
 Describe AllPlaces()
 
 Test 1: "It should build an AllPlaces object housing ind'l Places."
-Code: let allPlaces = new AllPlaces();
+Code: 
+let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let allPlaces = new AllPlaces();
+allPlaces;
 Expected Output: allPlaces = "{}";
 
 ## Known Bugs
