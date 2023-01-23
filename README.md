@@ -34,10 +34,18 @@ Place {
   notes: "EXTREMELY cold, subzero temperatures"
 }
 
+<!-- New function -->
+Describe Place.prototype.fullDescription()
+
+Test 1: "To print the full description to the console."
+Code: let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+testPlace.fullDescription();
+Expected Output: 
+"Montana, US"
+
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known issues at this time_
 
 ## License
 
