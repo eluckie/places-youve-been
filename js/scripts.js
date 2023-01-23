@@ -36,6 +36,14 @@ Place.prototype.fullDescription = function() {
   return this.placeName + ", " + this.countryName;
 };
 
+// event Delete
+function handleDelete(event){
+  allPlaces.deletePlaceById(event.target.id);
+  document.querySelector("button.delete").removeAttribute("class", "hidden");
+  // listPlacesFx(objectToDisplay);
+  //displayContactDetails(event);
+}
+
 // User Interface Logic ---------
 let allPlaces = new AllPlaces();
 
@@ -52,5 +60,5 @@ function handleFormSubmission(event) {
 
 window.addEventListener("load", function (){
   document.querySelector("form#new-place").addEventListener("submit", handleFormSubmission);
-
+  document.querySelector("button.delete").addEventListener("click", handleDelete);
 });
