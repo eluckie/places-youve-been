@@ -40,9 +40,10 @@ Place.prototype.fullDescription = function() {
 function handleDelete(event){
   allPlaces.deletePlaceById(event.target.id);
   document.querySelector("button.delete").removeAttribute("class", "hidden");
-  // listPlacesFx(objectToDisplay);
-  //displayContactDetails(event);
 }
+  // listPlacesFx(objectToDisplay);
+  // displayContactDetails(event);
+
 
 // User Interface Logic ---------
 let allPlaces = new AllPlaces();
