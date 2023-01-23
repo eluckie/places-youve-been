@@ -17,7 +17,13 @@ AllPlaces.prototype.findPlaceById = function(id){
   }
   return false;
 };
-
+AllPlaces.prototype.deletePlaceById = function(id) {
+    if (this.places[id] === undefined) {
+      return false;
+    }
+    delete this.places[id];
+    return true;
+  };
 // BI Place (each)
 function Place(placeName, countryName, seasonVisited, notes) {
   this.placeName = placeName;
