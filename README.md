@@ -60,9 +60,10 @@ Describe AllPlaces.prototype.addPlace()
 Test 1: "It should add specified place object to AllPlaces constructor object"
 Code: 
 let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
-let testPlace = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
+let testPlace2 = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
 let allPlaces = new AllPlaces();
-testPlace.addPlace;
+allPlaces.addPlace(testPlace);
+allPlaces.addPlace(testPlace2);
 Expected Output:
 allPlaces.places {Montana: Place, Vancouver: Place}
 
