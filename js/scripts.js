@@ -3,7 +3,10 @@ function AllPlaces(){
   this.places = {};
   this.currentId = 0;
 }
-
+AllPlaces.prototype.assignId = function() {
+    this.currentId += 1;
+    return this.currentId;
+};
 AllPlaces.prototype.addPlace = function(place) {
   this.places[place.placeName] = place;
 }

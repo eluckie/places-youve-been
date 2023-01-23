@@ -72,13 +72,25 @@ Describe AllPlaces.prototype.assignId()
 
 Test 1: "It should assign a unique id to each place added to the AllPlaces object"
 Code: 
-let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
+let allPlaces = new AllPlaces();
+allPlaces.assignId(testPlace1);;
+Expected Output:
+allPlaces.places {1}
+
+
+<!-- New function -->
+<!-- Describe AllPlaces.prototype.assignId()
+
+Test 1: "It should assign a unique id to each place added to the AllPlaces object"
+Code: 
+let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
 let testPlace2 = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
 let allPlaces = new AllPlaces();
-allPlaces.assignId(testPlace);
+allPlaces.assignId(testPlace1);
 allPlaces.assignId(testPlace2);
 Expected Output:
-allPlaces.places {1: Place, 2: Place}
+allPlaces.places {1: Place, 2: Place} -->
 
 ## Known Bugs
 
