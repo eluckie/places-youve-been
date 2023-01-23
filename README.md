@@ -72,6 +72,7 @@ Code:
 let testPlace = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
 let allPlaces = new AllPlaces();
 allPlaces.addPlace(testPlace);
+allPlaces;
 Expected Output:
 allPlaces.places {1: Place}
 
@@ -82,7 +83,7 @@ Test 1: "It should assign a unique id to each place added to the AllPlaces objec
 Code: 
 let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
 let allPlaces = new AllPlaces();
-allPlaces.assignId(testPlace1);;
+allPlaces.assignId(testPlace1);
 Expected Output:
 allPlaces.places {1}
 

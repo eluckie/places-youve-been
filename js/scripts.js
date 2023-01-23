@@ -8,7 +8,8 @@ AllPlaces.prototype.assignId = function() {
     return this.currentId;
 };
 AllPlaces.prototype.addPlace = function(place) {
-  this.places[place.placeName] = place;
+  place.id = this.assignId();
+  this.places[place.id] = place;
 }
 
 // BI Place (each)
