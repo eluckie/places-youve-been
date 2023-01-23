@@ -44,6 +44,13 @@ testPlace.fullDescription();
 Expected Output: 
 "Montana, US"
 
+<!-- New function -->
+Describe AllPlaces()
+
+Test 1: "It should build an AllPlaces object housing ind'l Places."
+Code: let allPlaces = new AllPlaces();
+Expected Output: allPlaces = "{}";
+
 ## Known Bugs
 
 * _No known issues at this time_
