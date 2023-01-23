@@ -96,8 +96,9 @@ Code:
 let testPlace1 = new Place("Montana", "US", "winter", "EXTREMELY cold, subzero temperatures");
 let testPlace2 = new Place("Vancouver", "CAN", "winter", "cold, cold temperatures");
 let allPlaces = new AllPlaces();
-let id = 1;
-allPlaces.assignId(id);
+allPlaces.addPlace(testplace1);
+allPlaces.addPlace(testplace2);
+allPlaces.findPlaceById(1);
 Expected Output:
 allPlaces.places {1: Place}
 
